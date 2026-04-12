@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rezerwacja</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="/">Home</a>
+</nav>
+
+<div class="container">
+    <h2>Rezerwacja wizyty</h2>
+
+    <form id="bookingForm" method="POST" action="/booking">
+
+        <input type="text" name="name" placeholder="Imię" required>
+        <input type="text" name="surname" placeholder="Nazwisko" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Telefon" required>
+        <input type="date" name="date" required>
+
+        <select name="service">
+            <option>Manicure</option>
+            <option>Makijaż</option>
+            <option>Pielęgnacja</option>
+            <option>Fryzury</option>
+            <option>Henna + Lifting</option>
+            <option>Kosmetologia</option>
+            <option>Masaże</option>
+            <option>SPA</option>
+        </select>
+
+        <button type="submit">Zarezerwuj</button>
+    </form>
+</div>
+
+
+<div id="toast">Rezerwacja zapisana ✔</div>
+
+<script src="/script.js"></script>
+
+</body>
+</html>
