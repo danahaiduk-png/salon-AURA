@@ -35,4 +35,3 @@ Okres realizacji: od końca lutego do 13 kwietnia
 ## Podsumowanie
 
 Projekt był rozwijany etapami, obejmując zarówno backend (Node.js + Express), jak i frontend (HTML, CSS, JavaScript). Każdy etap skupiał się na rozbudowie funkcjonalności oraz poprawie wyglądu i użyteczności aplikacji.
-```
