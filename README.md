@@ -5,6 +5,10 @@ Salon AURA to nowoczesna aplikacja webowa prezentująca ofertę salonu kosmetycz
 Aplikacja została zaprojektowana w stylu premium, z naciskiem na estetykę, prostotę obsługi oraz doświadczenie użytkownika.
 
 ---
+## Wykonawca
+
+Bohdana Haiduk – klasa 4D  
+---
 
 ## Demo
 
