@@ -1,4 +1,3 @@
-```md id="logfinal3"
 # Dziennik pracy – projekt: Salon AURA
 
 Autor: Bohdana Haiduk  
