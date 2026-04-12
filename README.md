@@ -2,7 +2,10 @@
 
 Salon AURA to nowoczesna aplikacja webowa prezentująca ofertę salonu kosmetycznego oraz umożliwiająca rezerwację wizyt online. Projekt został stworzony jako aplikacja typu full-stack z wykorzystaniem Node.js oraz Express po stronie serwera oraz HTML, CSS i JavaScript po stronie klienta.
 
-Aplikacja została zaprojektowana w stylu premium, z naciskiem na estetykę, prostotę obsługi oraz doświadczenie użytkownika.
+Strona została zaprojektowana w stylu premium, z naciskiem na estetykę, prostotę obsługi oraz doświadczenie użytkownika.
+
+## Gotowy link
+https://salon-aura.onrender.com
 
 ---
 ## Wykonawca
