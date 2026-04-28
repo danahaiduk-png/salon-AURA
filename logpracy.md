@@ -1,37 +1,44 @@
 # Dziennik pracy – projekt: Salon AURA
 
-Autor: Bohdana Haiduk  
-Klasa: 4D  
+**Autor (Lider):** Bohdana Haiduk
+**Zespół:**
+- Artur Malotka
+- Igor Bluma
+- Szymon Markowski
+- Aleks Borhmann
+- Adrian Kleba
+
+**Klasa:** 4D
 
 Dokument przedstawia harmonogram pracy nad projektem strony internetowej „Salon AURA”.
-
-Okres realizacji: od końca lutego do 13 kwietnia
+**Okres realizacji:** od końca lutego do 13 kwietnia
 
 ---
 
 ## Tabela logu pracy
 
-| Data | Czas pracy | Zakres wykonanych prac |
-|------|------------|--------------------------|
-| 24.02.2026 | 2h | Utworzenie projektu Node.js, instalacja Express, przygotowanie struktury folderów |
-| 26.02.2026 | 2h | Stworzenie serwera Express (server.js), podstawowe routingi |
-| 28.02.2026 | 3h | Utworzenie strony głównej (HTML), podstawowy layout i nawigacja |
-| 03.03.2026 | 3h | Stworzenie strony usług oraz pierwsze karty usług |
-| 06.03.2026 | 2h | Stylowanie strony (CSS), podstawowy wygląd UI |
-| 10.03.2026 | 3h | Poprawa układu kart usług, responsywność (flexbox/grid) |
-| 14.03.2026 | 2h | Stworzenie formularza rezerwacji |
-| 18.03.2026 | 3h | Dodanie obsługi formularza w Express (POST /booking) |
-| 22.03.2026 | 2h | Stworzenie strony klientów (tabela HTML) |
-| 26.03.2026 | 3h | Integracja JavaScript (fetch API), brak przeładowania strony |
-| 30.03.2026 | 2h | Dodanie powiadomienia toast po rezerwacji |
-| 02.04.2026 | 3h | Poprawa UI – styl premium (kolory, fonty, układ) |
-| 06.04.2026 | 2h | Poprawa nawigacji i routingów w Express |
-| 10.04.2026 | 3h | Testowanie aplikacji i poprawki błędów |
-| 12.04.2026 | 2h | Finalne poprawki CSS i responsywności |
-| 13.04.2026 | 3h | Finalizacja projektu, testowanie całej aplikacji, poprawki końcowe i przygotowanie do oddania |
+| Data | Czas pracy | Zakres wykonanych prac | Odpowiedzialni |
+|------------|-----------|------------------------|----------------|
+| 24.02.2026 | 2h | Utworzenie projektu Node.js, instalacja Express, struktura folderów | Bohdana Haiduk (lider), Artur Malotka |
+| 26.02.2026 | 2h | Serwer Express (server.js), podstawowe routingi | Artur Malotka, Igor Bluma |
+| 28.02.2026 | 3h | Strona główna (HTML), layout, nawigacja | Szymon Markowski, Aleks Borhmann |
+| 03.03.2026 | 3h | Strona usług, karty usług | Aleks Borhmann, Adrian Kleba |
+| 06.03.2026 | 2h | Stylowanie (CSS), podstawowy UI | Szymon Markowski |
+| 10.03.2026 | 3h | Responsywność (flexbox/grid), poprawa kart | Adrian Kleba, Igor Bluma |
+| 14.03.2026 | 2h | Formularz rezerwacji | Bohdana Haiduk, Artur Malotka |
+| 18.03.2026 | 3h | Obsługa formularza (POST /booking) | Artur Malotka, Igor Bluma |
+| 22.03.2026 | 2h | Strona klientów (tabela HTML) | Szymon Markowski |
+| 26.03.2026 | 3h | Integracja JS (fetch API) | Adrian Kleba, Igor Bluma |
+| 30.03.2026 | 2h | Powiadomienia toast | Aleks Borhmann |
+| 02.04.2026 | 3h | UI premium (kolory, fonty, układ) | Szymon Markowski, Aleks Borhmann |
+| 06.04.2026 | 2h | Routing i nawigacja w Express | Artur Malotka, Igor Bluma |
+| 10.04.2026 | 3h | Testowanie i poprawki błędów | Wszyscy |
+| 12.04.2026 | 2h | Finalne CSS i responsywność | Szymon Markowski, Aleks Borhmann |
+| 13.04.2026 | 3h | Finalizacja projektu | Wszyscy |
 
 ---
 
 ## Podsumowanie
 
-Projekt był rozwijany etapami, obejmując zarówno backend (Node.js + Express), jak i frontend (HTML, CSS, JavaScript). Każdy etap skupiał się na rozbudowie funkcjonalności oraz poprawie wyglądu i użyteczności aplikacji.
+Projekt był realizowany zespołowo, z podziałem na backend (Node.js + Express) oraz frontend (HTML, CSS, JavaScript).
+Każdy członek zespołu odpowiadał za wybrane etapy, a lider koordynował przebieg prac i integrację funkcjonalności.
