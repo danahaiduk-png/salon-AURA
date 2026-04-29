@@ -10,6 +10,10 @@
 
 <nav>
     <a href="/">Home</a>
+    <a href="/services">Usługi</a>
+    <a href="/booking">Rezerwacja</a>
+    <a href="/clients">Zespół</a>
+    <a href="/admin">Admin</a>
 </nav>
 
 <div class="container">
@@ -21,10 +25,12 @@
         <input type="text" name="surname" placeholder="Nazwisko" required>
         <input type="email" name="email" placeholder="Email" required>
         <input type="tel" name="phone" placeholder="Telefon" required>
+        <input type="time" name="time" required>
         <input type="date" name="date" required>
 
         <select name="service">
             <option>Manicure</option>
+            <option>Pedicure</option>
             <option>Makijaż</option>
             <option>Pielęgnacja</option>
             <option>Fryzury</option>
@@ -40,8 +46,47 @@
 
 
 <div id="toast">Rezerwacja zapisana ✔</div>
+            <option>SPA</option>
+        </select>
+
+
+        <button type="submit">Zarezerwuj</button>
+    </form>
+</div>
+
+
+<div id="toast">Rezerwacja zapisana ✔</div>
 
 <script src="/script.js"></script>
+<script>
+document.getElementById("bookingForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const data = {
+        name: this.name.value,
+        surname: this.surname.value,
+        email: this.email.value,
+        phone: this.phone.value,
+        date: this.date.value,
+        service: this.service.value,
+        time: "12:00" // jeśli nie masz godziny, ustaw stałą lub dodaj input
+    };
+
+    const res = await fetch("/reserve", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+    });
+
+    if (!res.ok) {
+        const err = await res.json();
+        alert(err.message);
+    } else {
+        alert("Rezerwacja zapisana ✔");
+        this.reset();
+    }
+});
+</script>
 
 </body>
 </html>

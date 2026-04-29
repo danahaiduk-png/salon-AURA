@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel admina</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f4f4;
+      text-align: center;
+      padding: 30px;
+    }
+
+    input {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      width: 220px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    #list div {
+      background: white;
+      margin: 10px auto;
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Panel admina</h1>
+
+<!-- 🔐 LOGIN -->
+<div id="loginBox">
+  <input id="login" placeholder="Login">
+  <input id="pass" type="password" placeholder="Hasło">
+  <button onclick="login()">Zaloguj</button>
+</div>
+
+<!-- 📊 PANEL -->
+<div id="panel" style="display:none;">
+  <h2>Rezerwacje</h2>
+  <button onclick="loadReservations()">Pokaż rezerwacje</button>
+
+  <div id="list"></div>
+</div>
+
+<script>
+async function login() {
+  const login = document.getElementById("login").value;
+  const password = document.getElementById("pass").value;
+
+  const res = await fetch("/admin-login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ login, password })
+  });
+
+  if (res.ok) {
+    document.getElementById("loginBox").style.display = "none";
+    document.getElementById("panel").style.display = "block";
+  } else {
+    alert("Błędny login lub hasło");
+  }
+}
+
+async function loadReservations() {
+  const res = await fetch("/admin-reservations");
+  const data = await res.json();
+
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+
+  data.forEach(r => {
+    list.innerHTML += `
+      <div>
+        <b>${r.name}</b><br>
+        ${r.service}<br>
+        ${r.date} ${r.time}<br>
+        ${r.phone}
+      </div>
+    `;
+  });
+}
+</script>
+
+</body>
+</html>

@@ -1,9 +1,90 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Klienci</title>
-    <link rel="stylesheet" href="/style.css">
+<meta charset="UTF-8">
+<title>Nasze specjalistki</title>
+<link rel="stylesheet" href="/style.css">
+
+<style>
+body {
+    font-family: Arial;
+}
+
+nav {
+    text-align: center;
+    margin: 20px;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    transition: 0.3s;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.role {
+    color: #555;
+    margin-top: 5px;
+}
+
+.exp {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius:2px;
+    font-size: 14px;
+}
+</style>
 </head>
 
 <body>
@@ -12,83 +93,94 @@
     <a href="/">Home</a>
     <a href="/services">Usługi</a>
     <a href="/booking">Rezerwacja</a>
-    <a href="/clients">Klienci</a>
+    <a href="/clients">Zespół</a>
+    <a href="/admin">Admin</a>
 </nav>
 
 <div class="container">
-    <h2>Nasi klienci</h2>
 
-    <table class="clients-table">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Imię</th>
-                <th>Email</th>
-                <th>Usługa</th>
-                <th>Data</th>
-            </tr>
-        </thead>
+<h2>Nasz zespół</h2>
 
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Anna Kowalska</td>
-                <td>anna@example.com</td>
-                <td>Manicure</td>
-                <td>2025-09-10</td>
-            </tr>
+<div class="cards">
 
-            <tr>
-                <td>2</td>
-                <td>Maria Nowak</td>
-                <td>maria@example.com</td>
-                <td>Makijaż</td>
-                <td>2025-12-11</td>
-            </tr>
+    <div class="card">
+        <img src="images/anna.png">
+        <div class="card-content">
+            <div class="name">Anna Kowalska</div>
+            <div class="role">Manicure</div>
+            <div class="exp">5+ lat doświadczenia</div>
+            <a class="btn" href="/booking">Umów wizytę</a>
+        </div>
+    </div>
 
-            <tr>
-                <td>3</td>
-                <td>Ola Wiśniewska</td>
-                <td>ola@example.com</td>
-                <td>Pielęgnacja</td>
-                <td>2026-01-12</td>
-            </tr>
+    <div class="card">
+        <img src="images/maria.png">
+        <div class="card-content">
+            <div class="name">Maria Nowak</div>
+            <div class="role">Makijaż</div>
+            <div class="exp">3+ lata doświadczenia</div>
+            <a class="btn" href="/booking">Umów wizytę</a>
+        </div>
+    </div>
 
-            <tr>
-                <td>4</td>
-                <td>Kasia Zielińska</td>
-                <td>kasia@example.com</td>
-                <td>Masaże</td>
-                <td>2026-03-13</td>
-            </tr>
+    <div class="card">
+        <img src="images/julia.png">
+        <div class="card-content">
+            <div class="name">Julia Wiśniewska</div>
+            <div class="role">Kosmetologia</div>
+            <div class="exp">7+ lat doświadczenia</div>
+            <a class="btn" href="/booking">Umów wizytę</a>
+        </div>
+    </div>
 
-            <tr>
-                <td>5</td>
-                <td>Monika Szymańska</td>
-                <td>monika@example.com</td>
-                <td>Rytuały SPA</td>
-                <td>2026-03-14</td>
-            </tr>
+    <div class="card">
+        <img src="images/kasia.png">
+        <div class="card-content">
+            <div class="name">Kasia Zielińska</div>
+            <div class="role">Masaż</div>
+            <div class="exp">2+ lata doświadczenia</div>
+            <a class="btn" href="/booking">Umów wizytę</a>
+        </div>
+    </div>
 
-                <tr>
-                    <td>6</td>
-                    <td>Karolina Wójcik</td>
-                    <td>karolina@example.com</td>
-                    <td>Fryzury</td>
-                    <td>2026-04-15</td>
-                </tr>
+    <div class="card">
+        <img src="images/paulina.png">
+        <div class="card-content">
+            <div class="name">Paulina Kaczmarek</div>
+            <div class="role">Fryzury</div>
+            <div class="exp">6+ lat doświadczenia</div>
+            <a class="btn" href="/booking">Umów wizytę</a>
+        </div>
+    </div>
 
-                    <tr>
-                        <td>7</td>
-                        <td>Paulina Kaczmarek</td>
-                        <td> paulina@example.com</td>
-                        <td>Kosmetologia</td>
-                        <td>2026-04-16</td>
-                    </tr>
+  <div class="card">
+        <img src="images/monika.png">
+        <div class="card-content">
+            <div class="name">Monika Siewiera</div>
+            <div class="role">Masaż</div>
+            <div class="exp">5+ lat doświadczenia</div>
+            <a class="btn" href="/booking">Umów wizytę</a>
+        </div>
+    </div>
 
-        </tbody>
-    </table>
-</div>
+<div class="card">
+        <img src="images/alina.png">
+        <div class="card-content">
+            <div class="name">Alina Rozewska</div>
+            <div class="role">Manicure i pedicure</div>
+            <div class="exp">8+ lat doświadczenia</div>
+            <a class="btn" href="/booking">Umów wizytę</a>
+        </div>
+    </div>
 
+<div class="card">
+        <img src="images/karolina.png">
+        <div class="card-content">
+            <div class="name">Karolina Olszewska</div>
+            <div class="role">Masaż</div>
+            <div class="exp">10+ lat doświadczenia</div>
+            <a class="btn" href="/booking">Umów wizytę</a>
+        </div>
+    </div>
 </body>
 </html>
